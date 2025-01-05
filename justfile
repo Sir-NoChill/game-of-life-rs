@@ -1,8 +1,8 @@
-nix-run:
-  nix develop --command just run
-
 run:
-  cargo run
+  nix develop --command cargo run
 
 build:
-  cargo build
+  nix develop --command cargo build
+
+test:
+  nix develop --command cargo test
